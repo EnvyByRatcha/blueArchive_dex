@@ -1,7 +1,7 @@
 # BlueArchive Dex
 
 [BlueArchive Dex](https://blue-archive-dex.vercel.app)
-*A comprehensive Blue Archive database and tool for players and enthusiasts.*
+* A comprehensive Blue Archive database and tool for players and enthusiasts.*
 
 ## 🚀 Project Overview
 BlueArchive Dex is a web-based application designed to provide players with an interactive and user-friendly database for the mobile game **Blue Archive**. It offers detailed character information
