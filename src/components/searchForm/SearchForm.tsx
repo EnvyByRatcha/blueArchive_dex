@@ -1,7 +1,7 @@
 import { typeStudent, school } from "@/utils/optionList";
 import { useEffect, useRef, useState } from "react";
 import { useSearchForm } from "./SearchForm.hook";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { SwiperSlide } from "swiper/react";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -15,9 +15,6 @@ function SearchForm() {
   const [targetSchool, setTargetSchool] = useState("Abydos");
 
   const sliderRef = useRef<Slider | null>(null);
-  const [oldSlide, setOldSlide] = useState(0);
-  const [activeSlide, setActiveSlide] = useState(0);
-  const [activeSlide2, setActiveSlide2] = useState(0);
 
   const handleColor = () => {
     const targetColor = typeStudent.find(
@@ -73,11 +70,6 @@ function SearchForm() {
         },
       },
     ],
-    beforeChange: (current: number, next: number) => {
-      setOldSlide(current);
-      setActiveSlide(next);
-    },
-    afterChange: (current: number) => setActiveSlide2(current),
   };
 
   useEffect(() => {

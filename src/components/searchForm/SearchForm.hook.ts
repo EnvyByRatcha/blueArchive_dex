@@ -5,12 +5,7 @@ import { useStudentListStore } from "@/store/studentList";
 import { Student } from "@/interface/Student";
 
 const useSearchForm = () => {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm({
+  const { register, watch } = useForm({
     defaultValues: {
       dmgType: "all",
       name: "",
@@ -122,7 +117,6 @@ const useSearchForm = () => {
         data: data,
         loading: false,
       });
-
     }
   }, [name, dmgType, school, sort]);
 

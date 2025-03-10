@@ -13,7 +13,6 @@ function StudentCard({
   favorite,
   onRemove,
 }: Student) {
-  
   const [myFavorite, setMyFavorite] = useState(favorite);
 
   const setColorDmgType = (dmgSelect: string) => {
@@ -72,6 +71,7 @@ function StudentCard({
             fill={myFavorite ? "#ff0000" : "#ffff"}
           />
         </svg>
+        <div className="hidden">{school}</div>
       </div>
       <div className="flex mt-2 text-[14px] text-white">
         <div
