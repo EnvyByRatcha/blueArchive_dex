@@ -1,6 +1,6 @@
 # BlueArchive Dex
 
-![BlueArchive Dex](https://blue-archive-dex.vercel.app)
+[BlueArchive Dex](https://blue-archive-dex.vercel.app)
 *A comprehensive Blue Archive database and tool for players and enthusiasts.*
 
 ## 🚀 Project Overview
