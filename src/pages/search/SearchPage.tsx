@@ -4,14 +4,18 @@ import { StudentCard } from "@/components/studentCard";
 import { useStudentListStore } from "@/store/studentList";
 
 function SearchPage() {
-  const { student} = useStudentListStore();
+  const { student } = useStudentListStore();
 
   return (
     <>
       <SearchForm />
       <div className="w-[90%] max-w-7xl mx-auto my-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 mt-2">
-          {student.loading && <div><Loading /></div>}
+          {student.loading && (
+            <div>
+              <Loading />
+            </div>
+          )}
 
           {!student.loading &&
             student.data.map((student) => {

@@ -106,6 +106,7 @@ const useSearchForm = () => {
 
   useEffect(() => {
     if (sort == "name" || sort == "favorite") {
+
       const data = filterStudent(
         fetchStudent.data,
         dmgType,
