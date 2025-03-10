@@ -1,5 +1,5 @@
 import { studentListService } from "@/service";
-import { use, useEffect } from "react";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useStudentListStore } from "@/store/studentList";
 import { Student } from "@/interface/Student";
