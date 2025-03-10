@@ -1,10 +1,10 @@
 # BlueArchive Dex
 
-![BlueArchive Dex] (https://blue-archive-dex.vercel.app)
+![BlueArchive Dex](https://blue-archive-dex.vercel.app)
 *A comprehensive Blue Archive database and tool for players and enthusiasts.*
 
 ## 🚀 Project Overview
-BlueArchive Dex is a web-based application designed to provide players with an interactive and user-friendly database for the mobile game **Blue Archive**. It offers detailed character information, skill breakdowns, and other essential game-related data.
+BlueArchive Dex is a web-based application designed to provide players with an interactive and user-friendly database for the mobile game **Blue Archive**. It offers detailed character information
 
 ## 🎯 Features
 - 📌 **Character Database** – Browse and search for all available characters with pesonal detailed.
@@ -12,10 +12,13 @@ BlueArchive Dex is a web-based application designed to provide players with an i
 - 🛠 **User-Friendly Interface** – Designed for smooth navigation and efficient data access.
 
 ## 🏗️ Tech Stack
-- **Frontend**: React, Tailwind CSS
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
-- **API**: Blue Archive game data integration
+- **Frontend**: [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: TailwindCSS (or update if using another framework)
+- **API**: [ฺBlueArchiveAQPI](https://github.com/arufars/api-blue-archive)
 
-## 📦 Installation & Setup
-To run the project locally, follow these steps:
+## 🔧 Configuration
+- The app fetches data from **[ฺBlueArchiveAQPI](https://github.com/arufars/api-blue-archive)**. No API key is required.
+
+---
+💡 Built with ❤️ by [@EnvyByRatcha](https://github.com/EnvyByRatcha)
