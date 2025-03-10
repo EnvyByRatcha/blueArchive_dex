@@ -26,6 +26,7 @@ export const studentListService = {
           photoUrl,
           damageType,
           armorType,
+          favorite: false,
         };
       }
     );
