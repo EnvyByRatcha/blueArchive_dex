@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "tailwindcss";
 
+#root {
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -8,11 +12,9 @@
 @keyframes slide-in {
   0% {
     transform: translateX(100%);
-
   }
   100% {
     transform: translateX(0);
-
   }
 }
 
@@ -23,11 +25,9 @@
 @keyframes slide-out {
   0% {
     transform: translateX(0);
-
   }
   100% {
     transform: translateX(100%);
-
   }
 }
 
@@ -38,4 +38,3 @@
 .animate-slide-out {
   animation: slide-out 0.3s ease-in;
 }
-
