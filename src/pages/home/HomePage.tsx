@@ -9,7 +9,6 @@ function HomePage() {
   const handleMute = () => {
     if (videoRef.current) {
       videoRef.current.volume = 0.3;
-      videoRef.current.muted = !isMute;
       setIsMute(!isMute);
     }
   };

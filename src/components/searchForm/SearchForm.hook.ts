@@ -27,6 +27,10 @@ const useSearchForm = () => {
       data: [],
       loading: true,
     });
+    setFetchStudent({
+      data: [],
+      loading: true,
+    });
 
     const data = await studentListService.getStudentList();
 
@@ -56,6 +60,7 @@ const useSearchForm = () => {
     name: string,
     sort: `name` | `favorite`
   ): Student[] => {
+    
     const nameFilter = studentList.filter((student) =>
       student.name.toLowerCase().includes(name?.toLowerCase())
     );
@@ -106,7 +111,6 @@ const useSearchForm = () => {
 
   useEffect(() => {
     if (sort == "name" || sort == "favorite") {
-
       const data = filterStudent(
         fetchStudent.data,
         dmgType,
