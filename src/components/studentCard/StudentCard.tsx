@@ -29,22 +29,21 @@ function StudentCard({
     const store = localStorage.getItem("favoriteStudent");
     const favorites: Student[] = store ? JSON.parse(store) : [];
 
-    const data = favorites.filter((student) => student._id == _id);
+    const data = favorites.map((student) => student._id).indexOf(_id);
+    //findIndex
 
-    if (data.length !== 0) {
-      const updataData = favorites.filter((student) => student._id !== _id);
+    let updateData: Student[];
 
+    if (data !== -1) {
+      updateData = favorites.filter((student) => student._id !== _id);
       onRemove?.(_id);
-
-      localStorage.setItem("favoriteStudent", JSON.stringify(updataData));
     } else {
-      const updataData = [
+      updateData = [
         ...favorites,
-        { _id, name, photoUrl, damageType, armorType, favorite: true },
+        { _id, name, photoUrl, school, damageType, armorType, favorite: true },
       ];
-      localStorage.setItem("favoriteStudent", JSON.stringify(updataData));
     }
-
+    localStorage.setItem("favoriteStudent", JSON.stringify(updateData));
     setMyFavorite(!myFavorite);
   };
 
