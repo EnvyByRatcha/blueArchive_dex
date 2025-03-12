@@ -31,7 +31,7 @@ function StudentCardDetail({ student }: studentDetailProps) {
             <img src={student.imageSchool} alt={student.name} />
             <span>{`${student.school} School`}</span>
           </div>
-          <div className="bg-white text-[18px] font-semibold px-4 border-[#979797] rounded-[8px]">
+          <div className="bg-white text-[18px] px-4 border-[#979797] rounded-[8px]">
             {student.role[1]}
           </div>
         </div>
